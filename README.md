@@ -1,1 +1,53 @@
 # Linux-Basics-Assignment
+
+**1. Creating and Renaming Files/Directories
+Create a directory named test_dir using mkdir.
+Inside test_dir, create an empty file called example.txt.
+Rename example.txt to renamed_example.txt using mv**
+
+mkdir test_dir
+touch test_dir/example.txt.
+mv test_dir/example.txt test_dir/renamed_example.txt
+
+**2. Viewing File Contents
+Use cat to display the contents of /etc/passwd.
+Display only the first 5 lines of /etc/passwd using head.
+Display only the last 5 lines of /etc/passwd using tail.**
+
+cat /etc/passwd
+head -n 5 /etc/passwd
+tail -n 5 /etc/passwd
+
+**3.Searching for Patterns
+Use grep to find all lines containing the word "root" in /etc/passwd.**
+
+grep "root" /etc/passwd
+
+**. Zipping and Unzipping
+Compress the test_dir directory into a file named test_dir.zip using zip.
+Unzip test_dir.zip into a new directory named unzipped_dir.**
+
+zip -r test_dir.zip test_dir
+unzip test_dir.zip -d unzipped_dir
+# (-r means Recursive System went to inside folder and converted every file & subfolder into zip)
+# (-d means Destination directory unzipped files shuld be extracted )
+
+**5. Downloading Files
+Use wget to download a file from a URL (e.g., https://example.com/sample.txt).**
+
+wget https://example.com/sample.txt
+
+**6. Changing Permissions
+Create a file named secure.txt and change its permissions to read-only for everyone using chmod.**
+
+touch secure.txt
+chmod 444 secure.txt 
+
+**7. Working with Environment Variables
+Use export to set a new environment variable called MY_VAR with the value "Hello, Linux!".**
+
+export MY_VAR="Hello, Linux!"
+
+**Submission Guidelines -: Attach Screenshots or command along with explanation and submit in doc(google doc or microsoft doc) format also attach github repo link**
+
+
